@@ -1,97 +1,64 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <title>Mosca ceca</title>
-        <link rel="stylesheet" href="syle_mosca.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Mosca Cieca - Tradizioni</title>
+    <link rel="stylesheet" href="syle_mosca.css">
+</head>
+<body>
 
-    <main>
-      <div class="riquadro-centrale">
-        <h2>Il Fascino della Mosca Cieca</h2>
-        <p>La Mosca Cieca non era solo un passatempo, ma una vera prova di coraggio. 
-           Negli anni '50, un semplice fazzoletto sugli occhi trasformava la piazza 
-           in un campo di battaglia invisibile, dove l'udito e il tatto diventavano i veri protagonisti.
-        </p> 
+<header>
+    <h1>Memorie di Gioco</h1>
+    <p>Il fascino della Mosca Cieca negli anni '50</p>
+</header>
 
-        <hr>
+<nav>
+    <ul>
+        <li><a href="home.html" class="bordo">Home</a></li>
+    </ul>
+</nav>
 
-        <h3>Le origini leggendarie</h3>
-        <p> Sapevi che questo gioco ha quasi duemila anni? Gli antichi romani lo chiamavano "Mosca di Rame". 
-            Il nome "Mosca" deriva probabilmente dal modo in cui il giocatore bendato si muove: agita le braccia a tentoni 
-            proprio come una mosca che sbatte contro un vetro, cercando una via d'uscita dal buio.
-        </p>
+<main>
+    <div class="contenuto-principale">
+        <section>
+            <h2 class="iniziale">Il Fascino della Mosca Cieca</h2>
+            <p>La Mosca Cieca non era solo un passatempo, ma una vera prova di coraggio. Negli anni '50, un semplice fazzoletto sugli occhi trasformava la piazza in un campo di battaglia invisibile.</p>
+            
+            <div class="box-storia">
+                <h3>Le origini leggendarie</h3>
+                <p>Gli antichi romani lo chiamavano "Mosca di Rame". Il nome deriva dal modo in cui il giocatore bendato agita le braccia a tentoni proprio come una mosca contro un vetro.</p>
+            </div>
 
-        <hr>
-
-        <h3>Le Regole "Dure" degli Anni '50</h3>
-        <p> 
-            A differenza di oggi, le regole erano più rigide per rendere il gioco più eccitante:
-
-            <ul>
-                <li><strong> Conta:</strong> Si decideva chi doveva "stare sotto" con una filastrocca o una conta.</li> <br>
-
-                <li><strong>Disorientamento:</strong> Una volta bendato con un foulard o un fazzoletto scuro (spesso preso in prestito dal papà), 
-                    il bambino veniva fatto girare su se stesso tre o sette volte per fargli perdere completamente il senso
-                    dell'orientamento.
-                </li><br>
-
-                <li><strong>Cattura:</strong> Il giocatore bendato doveva cercare di toccare uno degli altri bambini, 
-                    che a loro volta cercavano di evitarlo con movimenti rapidi e silenziosi.
-                </li><br>
-
-                <li><strong>Il Silenzio o la Beffa:</strong> Si poteva stabilire se giocare in silenzio assoluto o se gli altri bambini potevano urlare,
-                    fare smorfie o toccare leggermente la "mosca" per confonderla.
-                </li><br>
-
-                <li><strong>La Prova del Tatto:</strong> In molte varianti, non bastava toccare un compagno per liberarsi della benda; 
-                    la "mosca" doveva indovinare chi fosse toccandogli il viso o i vestiti senza mai sgarrare.
-                </li>
-
+            <h3>Le Regole "Dure" di una volta</h3>
+            <ul class="lista-regole">
+                <li><strong>Il Disorientamento:</strong> Si ruota il bendato 7 volte.</li>
+                <li><strong>Il Silenzio:</strong> Tutti devono muoversi senza farsi sentire.</li>
+                <li><strong>Il Tatto:</strong> Bisogna riconoscere l'amico toccandogli i vestiti.</li>
             </ul>
-        </p>
-        
-        <hr>
+        </section>
 
-        <h3>Varianti Curiosi</h3>
-        <p> 
+        <aside class="colonna-foto">
+            <img src="Gemini_Generated_Image_89y01u89y01u89y0.png" alt="Gioco antico">
+            <p class="didascalia">Un gioco che unisce le generazioni.</p>
+        </aside>
+    </div>
 
-            <ul>
-                <li><strong> Il Cerchio Magico:</strong>Spesso si giocava formando un girotondo attorno alla mosca. 
-                    Quando il bendato gridava "Alt!", tutti dovevano fermarsi immobili. Se la mosca puntava il dito verso qualcuno,
-                     quel bambino doveva entrare nel cerchio e sfidarla da solo in uno spazio ristretto.</li> <br>
 
-                <li><strong>Sette Passi:</strong> In una variante, 
-                    la mosca poteva fare solo sette passi verso una direzione scelta prima di dover tentare la cattura.
-                </li><br>
-
-            </ul>
-        
-        </p>
-
-        <hr>
-
-        <h3>Perché piaceva così tanto?</h3>
-        
-        <p> Era un gioco che metteva alla prova la propriocezione (la capacità di percepire il proprio corpo nello spazio) e l'udito. 
-            Per i bambini degli anni '50, era un modo protetto per "giocare con la paura": stare ad occhi chiusi in mezzo al rumore e 
-            alle risate degli amici insegnava a fidarsi dei propri sensi e degli altri.
-        </p>
-
-        <div class="azioni">
-          <a class="pulsante-home" href="home.html" title="Torna alla Home">← Torna alla Home</a>
-          
-          <form class="form-accanto" action="#" method="get" onsubmit="return false;">
-            <label for="pagina" class="sr-only">Vai a</label>
-            <select id="pagina" name="pagina" aria-label="Seleziona pagina" onchange="if(this.value) window.location.href = this.value;">
+        <form>
+            <label>Esplora altri giochi:</label>
+            <select onchange="window.location.href=this.value">
+                <option value="">Scegli...</option>
                 <option value="acchiapparella.html">Acchiapparella</option>
-                <option value="campana.html">Campana</option>
-                <option value="ruba_bandiera.html">Ruba bandiera</option>
+                <option value="campana.html">La Campana</option>
+                <option value="ruba_bandiera.html">Ruba Bandiera</option>
             </select>
-          </form>
-        </div>
+        </form>
+    </div>
+</main>
 
-        </div>
-    </main>
+<footer>
+    <p>&copy; I GIOCHI DE NA VOLTA - Francesco Iacoangeli</p>
+</footer>
 
-    </body>
+</body>
+</html>

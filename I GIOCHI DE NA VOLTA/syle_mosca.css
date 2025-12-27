@@ -1,164 +1,119 @@
+/* Reset e Base */
 html, body {
-    height: 100%;
     margin: 0;
-    
-}
-
-h2{
-    text-align: center;
-    font-size: 30px;
-    font-family: 'EB Garamond', 'Bodoni MT', 'Times New Roman', serif;
-}
-
-h3{
-    border-left: 6px solid red;
-    padding-left: 15px;
+    padding: 0;
+    height: 100%;
 }
 
 body {
-    background-image: url('Gemini_Generated_Image_89y01u89y01u89y0.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-
+    background-color: #f4ece1; /* Crema vintage */
+    font-family: "Georgia", serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-header{
-    background-color: rgba(51,51,51,0.8);
-    color: #fff;
+/* Header elegante */
+header {
+    background-color: #5d4037; /* Marrone scuro */
+    color: #e0c2a2;
     text-align: center;
-    padding: 10px 0;
+    padding: 30px;
+    border-bottom: 5px solid #8d6e63;
 }
 
+/* Navigazione orizzontale */
 nav {
-    background-color: rgba(68,68,68,0.8);
-    color: white;
-    padding: 10px; 
-    text-align: center;
+    background-color: #795548;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Il tuo stile bordo personalizzato ma con nuovi colori */
+a.bordo {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00acc1; /* Un azzurro che stacca */
+    border: 2px solid #ffeb3b; /* Bordo giallo */
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* Layout Centrale */
 main {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.riquadro-centrale {
-    background-color: rgba(255,255,255,0.30); /* leggermente più trasparente */
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
     padding: 30px;
-    border-radius: 12px;
-    max-width: 800px;
-    width: 90%;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    color: #000;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255,255,255,0.20);
-    font-size: 20px;
+    border-radius: 2px;
+    box-shadow: 10px 10px 0px #d7ccc8; /* Ombra netta stile retrò */
 }
 
-.azioni {
+.contenuto-principale {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 18px;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.form-accanto {
-    display: flex;
-    gap: 8px;
-    align-items: center;
+section {
+    flex: 2;
 }
 
-.form-accanto select {
-    padding: 8px 10px;
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,0.12);
-    background: #fff;
-    font-size: 0.95rem;
+.iniziale {
+    color: #5d4037;
+    font-size: 35px;
+    border-left: 5px solid #00acc1;
+    padding-left: 15px;
 }
 
-
-
-.pulsante-home {
-    display: inline-block;
-    background: linear-gradient(135deg,#5de9eb,#7ce0ff);
-    color: #111;
-    padding: 10px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    border: 2px solid rgb(153,0,255);
-    font-weight: 700;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    transition: transform 0.12s ease, box-shadow 0.12s ease;
+/* Sidebar Immagine */
+.colonna-foto {
+    flex: 1;
+    text-align: center;
 }
 
-.pulsante-home:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+.colonna-foto img {
+    width: 100%;
+    border: 8px solid #f4ece1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-.pulsante-home:focus {
-    outline: 3px solid rgba(153,0,255,0.25);
-    outline-offset: 2px;
+.didascalia {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #6d4c41;
 }
 
 
-
-.container-gioco {
-  position: relative;
-  width: fit-content;
-  max-width: 800px; 
-  margin: 20px auto;
-  font-family: 'Georgia', serif; 
+.pulsante-vai {
+    background-color: #5d4037;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 
-
-.container-gioco img {
-  width: 100%;
-  display: block;
-  border-radius: 8px;
+select {
+    padding: 10px;
+    border: 2px solid #5d4037;
 }
 
-
-.overlay-testo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  
-  width: 70%;
-  padding: 25px;
-  color: #333;
-  text-align: center;
-  
-  
-  background: rgba(255, 255, 255, 0.6); 
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px);
-  
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-.overlay-testo h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.overlay-testo p {
-  line-height: 1.6;
-  font-size: 1.1rem;
+/* Footer */
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
 }

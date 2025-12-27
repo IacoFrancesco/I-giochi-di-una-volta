@@ -1,0 +1,146 @@
+/* Struttura e Colori */
+body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #fffaf0; /* Bianco avorio */
+    color: #4e342e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ff7043; /* Corallo */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.linea-decorativa {
+    height: 5px;
+    width: 100px;
+    background-color: #ffd54f;
+    margin: 10px auto;
+}
+
+/* Navigazione */
+nav {
+    background-color: #bf360c;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav ul li { display: inline; margin: 0 15px; }
+
+/* Stile bordo richiesto */
+a.bordo {
+    text-decoration: none;
+    background-color: #5de9eb;
+    border: 2px solid rgb(153, 0, 255);
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Layout a blocchi alternati */
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blocco {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+
+/* Classe per invertire l'ordine degli elementi */
+.alternato {
+    flex-direction: row-reverse;
+}
+
+.testo {
+    flex: 1;
+}
+
+.elemento-visivo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.elemento-visivo img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Decorazioni particolari */
+.regole-box {
+    background-color: #ffd54f;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-5deg);
+}
+
+.numero-grande {
+    font-size: 50px;
+    font-weight: bold;
+    color: #bf360c;
+}
+
+.sasso-piatto {
+    border: 3px dashed #bf360c;
+    padding: 40px;
+    border-radius: 50% 40% 60% 50%;
+    background-color: #d7ccc8;
+}
+
+/* Sezione finale */
+.footer-form {
+    background-color: #3e2723;
+    color: white;
+    padding: 40px;
+}
+
+.controlli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.btn-tondo {
+    background-color: #ffd54f;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #261611;
+    color: #8d6e63;
+}
+
+h2.iniziale {
+    color: #bf360c;
+    font-size: 32px;
+}

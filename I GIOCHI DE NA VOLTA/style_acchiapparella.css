@@ -1,0 +1,120 @@
+/* Struttura Generale */
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Verdana', sans-serif;
+    background-color: #e8f5e9; /* Verde chiarissimo */
+    color: #2e7d32;
+}
+
+/* Header Sportivo */
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    border-bottom: 8px solid #1b5e20;
+}
+
+/* Navigazione */
+nav {
+    background-color: #388e3c;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Stile bordo richiesto (Azzurro/Viola) */
+a.bordo {
+    text-decoration: none;
+    background-color: #5de9eb;
+    border: 2px solid rgb(153, 0, 255);
+    border-radius: 5px;
+    padding: 6px 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Layout a tre colonne (Grid-like con Flex) */
+main.grid-layout {
+    flex: 1;
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    align-items: center;
+}
+
+.colonna-testo {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.foto-centrale {
+    flex: 1;
+}
+
+.foto-centrale img {
+    width: 100%;
+    border-radius: 50%; /* Immagine circolare per cambiare stile */
+    border: 5px solid #2e7d32;
+}
+
+h2.iniziale {
+    font-size: 28px;
+    border-bottom: 2px solid #2e7d32;
+    padding-bottom: 10px;
+}
+
+/* Form finale */
+.sezione-finale {
+    background-color: #c8e6c9;
+    padding: 30px;
+    text-align: center;
+}
+
+.box-comandi {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.btn-retro {
+    background-color: #1b5e20;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #1b5e20;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

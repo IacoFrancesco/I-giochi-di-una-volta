@@ -1,0 +1,137 @@
+body {
+    background-color: #333; /* Sfondo scuro per far risaltare il foglio */
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; /* Font macchina da scrivere */
+}
+
+.foglio-dattiloscritto {
+    background-color: #e8e4d9; /* Colore carta vecchia/carbone */
+    width: 100%;
+    max-width: 850px;
+    padding: 60px 80px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    position: relative;
+    color: #222;
+    border-left: 15px solid #d1cdbf; /* Simula lo spessore del fascicolo */
+}
+
+/* Timbro rosso "Approvato" */
+.timbro-ufficiale {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border: 4px solid #b22222;
+    color: #b22222;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 24px;
+    transform: rotate(15deg);
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.intestazione-ufficio {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.linea-doppia {
+    border: none;
+    border-top: 3px double #333;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 22px;
+    text-decoration: underline;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+p, li {
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.cornice-documento {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.cornice-documento img {
+    width: 100%;
+    filter: grayscale(100%) sepia(0.2) contrast(1.2);
+    display: block;
+}
+
+.didascalia-tecnica {
+    font-size: 13px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #444;
+}
+
+.note-istruttore {
+    background-color: rgba(0,0,0,0.05);
+    padding: 15px;
+    border-left: 5px solid #666;
+    margin-top: 40px;
+}
+
+/* Navigazione in stile archivio */
+.navigazione-archivio {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-archivio {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #222;
+    padding: 5px 10px;
+}
+
+.link-archivio:hover {
+    background: #222;
+    color: #e8e4d9;
+}
+
+.menu-archivio label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu-archivio select {
+    font-family: 'Courier New', monospace;
+    background: transparent;
+    border: 1px solid #222;
+}
+
+.firma-istruttore {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.firma {
+    font-family: 'Brush Script MT', cursive; /* Simula firma a mano */
+    font-size: 28px;
+    margin-top: 10px;
+}
